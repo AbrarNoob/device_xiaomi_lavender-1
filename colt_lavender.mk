@@ -15,12 +15,15 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 # Inherit dalvik from native
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-# Inherit some common Corvus stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
-$(call inherit-product, device/corvus/CorvusParts/corvusparts.mk)
+# Inherit some common ColtOS stuff.
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
+$(call inherit-product, packages/apps/XiaomiParts/xiaomiparts.mk)
+TARGET_BOOT_ANIMATION_RES := 1080x2340
+COLT_BUILD_TYPE := UNOFFICIAL
+COLT_DEVICE_MAINTAINER := RezaBagasRifaldy
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := du_lavender
+PRODUCT_NAME := colt_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
@@ -31,8 +34,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=lavender \
     PRIVATE_BUILD_DESC="lavender-user 10 QKQ1.190910.002 20.3.19 release-keys"
 
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys"
-
-DU_BUILD_TYPE := OFFICIAL
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
