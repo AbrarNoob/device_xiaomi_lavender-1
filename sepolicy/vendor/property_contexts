@@ -54,7 +54,7 @@ persist.vendor.wigig.npt.enable         u:object_r:vendor_default_prop:s0
 wifi.active.interface                   u:object_r:exported_wifi_prop:s0
 
 # Dirac
-persist.audio.dirac.                    u:object_r:dirac_prop:s0
+# persist.audio.dirac.                    u:object_r:dirac_prop:s0
 
 # HAL3
 persist.camera.HAL3.enable                    u:object_r:camera_prop:s0
