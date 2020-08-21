@@ -402,7 +402,8 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    camera.sdm660_shim
+    camera.sdm660_shim \
+    libmmcamera_mg_faceppshim
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -466,3 +467,4 @@ PRODUCT_BOOT_JARS += \
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
+
