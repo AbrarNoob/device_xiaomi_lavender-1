@@ -21,8 +21,8 @@
     -->
     <integer name="config_fingerprintSensorLocation">0</integer>
 
-    <!-- Device specific doze package -->
-    <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
+    <!-- Smart Charging -->
+    <bool name="config_supportSmartCharging">true</bool>
 
     <!-- Battery Health -->
     <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
