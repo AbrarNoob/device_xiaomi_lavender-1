@@ -15,15 +15,14 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 # Inherit dalvik from native
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-# Inherit some common ColtOS stuff.
-$(call inherit-product, vendor/colt/config/common_full_phone.mk)
+# Inherit some common Resurrection stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 $(call inherit-product, packages/apps/XiaomiParts/xiaomiparts.mk)
 TARGET_BOOT_ANIMATION_RES := 1080x2340
-COLT_BUILD_TYPE := UNOFFICIAL
-COLT_DEVICE_MAINTAINER := RezaBagasRifaldy
+
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := colt_lavender
+PRODUCT_NAME := rr_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7

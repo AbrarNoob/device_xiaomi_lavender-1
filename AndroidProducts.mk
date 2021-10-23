@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/colt_lavender.mk
+    $(LOCAL_DIR)/rr_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    colt_lavender-user \
-    colt_lavender-userdebug \
-    colt_lavender-eng
+    rr_lavender-user \
+    rr_lavender-userdebug \
+    rr_lavender-eng
