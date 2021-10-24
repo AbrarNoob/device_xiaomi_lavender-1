@@ -17,7 +17,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Inherit some common Resurrection stuff.
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
-$(call inherit-product, packages/apps/XiaomiParts/xiaomiparts.mk)
 TARGET_BOOT_ANIMATION_RES := 1080x2340
 
 
