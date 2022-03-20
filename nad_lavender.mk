@@ -16,7 +16,7 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Inherit some common Nad stuff.
-$(call inherit-product, vendor/nad/config/common_full_phone.mk)
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080x2340
 
 
